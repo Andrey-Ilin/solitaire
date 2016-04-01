@@ -1,0 +1,108 @@
+
+
+
+img {
+    width: 80px;
+    height: 114px;
+}
+
+body {
+    background-color: green;
+}
+
+[data-component="deck-place"] {
+    border: 3px solid white;
+    border-radius: 6px;
+    width: 80px;
+    height: 114px;
+    position: absolute;
+    top: 100px;
+    left: 100px;
+}
+
+[data-component="for-turn-deck"] {
+    border: 3px solid white;
+    border-radius: 6px;
+    width: 80px;
+    height: 114px;
+    position: absolute;
+    top: 100px;
+    left: 220px;
+}
+
+.draggable {
+    width: 80px;
+    height: 114px;
+    position: absolute;
+}
+
+.droppable {
+    margin-right: 30px;
+    width: 80px;
+    height: 114px;
+    border: 3px solid white;
+    border-radius: 6px;
+}
+
+[data-component="placeForSortedCards_1"] {
+    position: absolute;
+    top: 100px;
+    left: 500px;}
+
+[data-component="placeForSortedCards_2"] {
+    position: absolute;
+    top: 100px;
+    left: 650px;
+}
+[data-component="placeForSortedCards_3"] {
+    position: absolute;
+    top: 100px;
+    left: 800px;
+}
+[data-component="placeForSortedCards_4"] {
+    position: absolute;
+    top: 100px;
+    left: 950px;
+}
+
+[data-component="placeForRandomCards_1"] {
+    position: absolute;
+    top: 430px;
+    left: 100px;
+}
+
+[data-component="placeForRandomCards_2"] {
+    position: absolute;
+    top: 430px;
+    left: 250px;
+}
+
+[data-component="placeForRandomCards_3"] {
+    position: absolute;
+    top: 430px;
+    left: 400px;
+}
+
+[data-component="placeForRandomCards_4"] {
+    position: absolute;
+    top: 430px;
+    left: 550px;
+}
+
+[data-component="placeForRandomCards_5"] {
+    position: absolute;
+    top: 430px;
+    left: 700px;
+}
+
+[data-component="placeForRandomCards_6"] {
+    position: absolute;
+    top: 430px;
+    left: 850px;
+}
+
+[data-component="placeForRandomCards_7"] {
+    position: absolute;
+    top: 430px;
+    left: 1000px;
+}
