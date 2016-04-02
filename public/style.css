@@ -67,42 +67,42 @@ body {
 
 [data-component="placeForRandomCards_1"] {
     position: absolute;
-    top: 430px;
+    top: 330px;
     left: 100px;
 }
 
 [data-component="placeForRandomCards_2"] {
     position: absolute;
-    top: 430px;
+    top: 330px;
     left: 250px;
 }
 
 [data-component="placeForRandomCards_3"] {
     position: absolute;
-    top: 430px;
+    top: 330px;
     left: 400px;
 }
 
 [data-component="placeForRandomCards_4"] {
     position: absolute;
-    top: 430px;
+    top: 330px;
     left: 550px;
 }
 
 [data-component="placeForRandomCards_5"] {
     position: absolute;
-    top: 430px;
+    top: 330px;
     left: 700px;
 }
 
 [data-component="placeForRandomCards_6"] {
     position: absolute;
-    top: 430px;
+    top: 330px;
     left: 850px;
 }
 
 [data-component="placeForRandomCards_7"] {
     position: absolute;
-    top: 430px;
+    top: 330px;
     left: 1000px;
 }
