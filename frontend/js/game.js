@@ -177,6 +177,7 @@ class Game {
                         && dragObject.elem.getAttribute('data-suit') == dropElem.lastElementChild.getAttribute('data-suit')
                         && dropElem.getAttribute('data-top') == "top")) {
                         insertCard();
+                        dragObject.elem.style.marginTop = 0 + 'px';
                     } else {
                         if ((dropElem.childNodes.length != 0
                             && dragObject.elem.getAttribute('data-value') == dropElem.lastElementChild.getAttribute('data-value') - 1
@@ -203,6 +204,7 @@ class Game {
 
                 if (nextSiblings.length) {
                     for (let i = 0; i < nextSiblings.length; i++) {
+                        nextSiblings[i].style.marginTop = dropElem.childNodes.length * 15 + 'px';
                         dropElem.appendChild(nextSiblings[i]);
                     }
                 }
@@ -224,9 +226,9 @@ class Game {
 
     toShuffleCards() {
         let COUNTCARDSINDECK = 52;
+        let randomChoise;
 
         let placeForClosedDeck = document.querySelector('[data-component="deck-place"]');
-
         placeForClosedDeck.addEventListener('click', returnCards.bind(this));
 
         let placeWithOneCard = document.querySelector('[data-component="placeForRandomCards_1"]');
@@ -237,7 +239,6 @@ class Game {
         let placeWithSixCard = document.querySelector('[data-component="placeForRandomCards_6"]');
         let placeWithSevenCard = document.querySelector('[data-component="placeForRandomCards_7"]');
 
-        let randomChoise;
 
         toPlaceCard(placeWithSevenCard, 7);
         toPlaceCard(placeWithSixCard, 6);
@@ -265,7 +266,6 @@ class Game {
                     deck[i].turnToFaceCard();
                 }
             }
-
         }
 
 
@@ -276,8 +276,8 @@ class Game {
 
             if (target.tagName === ('DIV')) {
                 if (!to.firstElementChild) {
-                    while (from.firstElementChild) {
-                        to.appendChild(from.firstElementChild);
+                    for (let i = from.children.length - 1; i >= 0; i--) {
+                        to.appendChild(from.children[i]);
                     }
                 }
 
@@ -286,7 +286,6 @@ class Game {
                         deck[i]._face.hidden = true;
                         deck[i]._back.hidden = false;
                         deck[i]._close = true;
-                        console.log(deck[i]);
                     }
                 }
             }

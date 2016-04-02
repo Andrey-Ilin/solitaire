@@ -44,7 +44,6 @@ class Card {
         this._close = false;
     }
 
-
     _openCard(event) {
         let target = event.target;
         let card = target.closest('.draggable');
