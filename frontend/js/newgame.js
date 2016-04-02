@@ -4,8 +4,14 @@
 
 'use strict';
 
-let cancel = document.getElementById('cancel');
+class NewGame {
+    constructor() {
+        this._el = document.getElementById('newgame');
+        this._el.onclick = function () {
+            location.reload();
+        };
+    }
+}
 
-cancel.onclick = function () {
-    location.reload();
-};
+module.exports = NewGame;
+

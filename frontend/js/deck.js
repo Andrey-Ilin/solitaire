@@ -3,6 +3,9 @@
  */
 
 'use strict';
+
+import Card from "./card.js";
+
 let deck = (function () {
     let deck = [
 
@@ -813,5 +816,7 @@ let deck = (function () {
 
     return deck;
 })();
+
+module.exports = deck;
 
 

@@ -2,6 +2,8 @@
  * Created by andrey on 28.03.16.
  */
 
+    import deck from "./deck.js";
+
 class Game {
     constructor(options) {
         this._el = options.element;
@@ -292,3 +294,5 @@ class Game {
         }
     }
 }
+
+module.exports = Game;
